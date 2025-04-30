@@ -1,0 +1,413 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background-color: #f7f8fc;
+    color: #333;
+}
+
+.main-content {
+   padding: 50px;
+   background-color: #f7f8fc; 
+   flex-grow: 1; 
+}
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+}
+
+#modal-toggle:checked ~ .modal-container {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 600px;
+    text-align: left;
+}
+
+.photo-box {
+    border: 2px dashed #858484;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: #d1cbcb;
+    margin-left: 200px;
+
+}
+
+
+.upload-area p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 70px;
+    color: #919191;
+
+}
+.photo-preview {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+input[type="file"] {
+    opacity: 0; 
+    position: absolute;
+    width: 100%;
+    height: 150px;
+    cursor: pointer;
+}
+
+#nom{
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+
+#description{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    border: 1px solid rgb(136, 136, 136);
+}
+
+.file-info {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.photo-preview {
+    width: 100%;
+    height: 150px;
+    background-color: #f0f0f0;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.module-info {
+    font-size: 1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.apprenants-info {
+    font-size: 1rem;
+    color: #ff6600;
+    font-weight: bold;
+}
+
+/* Barre de capacité */
+input[type="range"] {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.modal form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+select {
+    width: 150px;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+.form-group value{
+  font-weight: bold;
+}
+
+
+
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Deux colonnes */
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-row {
+    display: flex;
+    gap: 20px; 
+}
+
+.form-group {
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+}
+
+.modal-buttons {
+    grid-column: span 2; 
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+/* Boutons du modal */
+.modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+
+.create-btn {
+    background-color: #79a182;
+    color: white;
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 20%;
+}
+
+.cancel-btn {
+    background-color: #ffffff;
+    color: rgb(92, 89, 89);
+    padding: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    width: 20%;
+}
+
+
+
+.referentiel-container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.referentiel-card {
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 8px;
+    text-align: center;
+    display: flex;
+    flex-direction: column; 
+    align-items: start;
+    justify-content: flex-start;
+}
+
+h2{
+    color: #0c9287;
+}
+
+
+
+.image-container img {
+    width: 350px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.card-content {
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+   
+}
+
+.card-content h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    color: #0c9287;
+
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #555;
+    
+}
+.card-content h5 {
+    font-size: 1rem;
+    color: rgba(115,118,123,255);
+   
+    
+}
+.card-content h4 {
+    font-size: 1rem;
+    color: #000000;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trait-vert {
+    width: 100px;
+    height: 3px;
+    background-color: #0c9287; 
+    margin: 5px auto 10px; 
+    border-radius: 2px;
+    position: absolute;
+    left: 0;
+    top: 120px;
+}
+
+.apprenants-info {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    justify-content: flex-start;
+    margin-top: 60px;
+    position: relative;
+}
+
+.cercle1 {
+    width: 30px;
+    height:  30px;
+    background-color: rgba(208,210,220,255);
+    border: 2px solid #f0f0f0;
+
+    border-radius: 50%;
+}
+.cercle2 {
+    width:  30px;
+    height:  30px;
+    background-color: rgba(154,161,173,255);
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #f0f0f0;
+    left: 20px;
+
+}
+
+.cercle3 {
+    width:  30px;
+    height:  30px;
+    background-color: rgba(105,112,127,255); /* Gris */
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid #f0f0f0;
+    left: 40px;
+
+}
+.apprenants-info p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #0c9287;
+    position: absolute;
+    left: 80px;
+    bottom: 5px;
+}
+
+
+
+.search-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    margin-top: 1rem;
+}
+
+.search-input {
+    flex-grow: 1;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+}
+
+.all-btn, .add-btn {
+    background-color: #ff6600;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.all-btn a{
+    text-decoration: none;
+    color: white;
+}
+.add-btn {
+    background-color: rgba(12,146,135,255);
+}
+
+.all-btn i, .add-btn i {
+    font-size: 1.2rem;
+}
+
+
+.fa-list{
+    color: white;
+}
+.fa-plus{
+    color: white;
+}
+
+
+
+.search-input-1{
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    width: 100%;
+}
+
+.barre{
+    flex: 1;
+}
+
+.btn-affecter {
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}

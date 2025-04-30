@@ -1,0 +1,364 @@
+{
+    "users": [
+        {
+            "nom": "admin",
+            "prenom": "admin",
+            "email": "admin@example.com",
+            "login": "user123",
+            "role": "admin",
+            "telephone": "7712345678",
+            "password": "admin123",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "vigile",
+            "prenom": "vigile",
+            "email": "vigile@example.com",
+            "login": "user123",
+            "role": "vigil",
+            "telephone": "770112233",
+            "password": "1234Passer",
+            "image": "assets\/images\/a.png"
+        },
+        {
+            "nom": "apprenant",
+            "prenom": "apprenant",
+            "email": "apprenant@example.com",
+            "login": "user123",
+            "role": "apprenant",
+            "telephone": "778899001",
+            "password": "apprenant123",
+            "image": "assets\/images\/a.png"
+        }
+    ],
+    "promotions": [
+        {
+            "nom": "Promotion 7",
+            "date_debut": "2025-02-04",
+            "date_fin": "2025-11-04",
+            "nombre_apprenants": 180,
+            "statu": "active",
+            "etat": "en cours",
+            "image": "assets\/images\/promo.jpeg",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 6",
+            "date_debut": "2024-02-10",
+            "date_fin": "2024-11-20",
+            "nombre_apprenants": 135,
+            "statu": "inactive",
+            "etat": "termin\u00e9",
+            "image": "assets\/images\/promo.jpeg",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 5",
+            "date_debut": "2023-01-10",
+            "date_fin": "2023-11-20",
+            "nombre_apprenants": 125,
+            "statu": "inactive",
+            "etat": "termin\u00e9",
+            "image": "assets\/images\/promo.jpeg",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 4",
+            "date_debut": "2022-01-10",
+            "date_fin": "2022-10-20",
+            "nombre_apprenants": 185,
+            "statu": "inactive",
+            "etat": "termin\u00e9",
+            "image": "assets\/images\/promo.jpeg",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 3",
+            "date_debut": "12\/12\/2021",
+            "date_fin": "12\/12\/2021",
+            "image": "assets\/images\/promo.jpeg",
+            "statu": "inactive",
+            "nombre_apprenants": 0,
+            "etat": "termin\u00e9",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 2",
+            "date_debut": "12\/12\/2020",
+            "date_fin": "12\/12\/2020",
+            "etat": "termin\u00e9",
+            "image": "assets\/images\/promo.jpeg",
+            "statu": "inactive",
+            "nombre_apprenants": 0,
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "Promotion 1",
+            "date_debut": "2019-02-04",
+            "date_fin": "2019-12-04",
+            "nombre_apprenants": 180,
+            "statu": "inactive",
+            "etat": "termin\u00e9",
+            "image": "assets\/images\/promo.jpeg",
+            "referentiels": [
+                {
+                    "nom": "DEV DATA",
+                    "nombre_apprenants": 45
+                },
+                {
+                    "nom": "REF DIG",
+                    "nombre_apprenants": 40
+                },
+                {
+                    "nom": "DEV WEB\/MOBILE",
+                    "nombre_apprenants": 50
+                },
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 30
+                }
+            ]
+        },
+        {
+            "nom": "promotion 2026",
+            "date_debut": "12\/02\/2026",
+            "date_fin": "23\/11\/2027",
+            "image": "uploads\/promotions\/promo_68121f2d115b99.94716057.jpeg",
+            "referentiels": [
+                {
+                    "nom": "AWS",
+                    "nombre_apprenants": 0
+                }
+            ],
+            "statu": "inactif",
+            "nombre_apprenants": 0,
+            "status": "en cours"
+        }
+    ],
+    "referentiels": [
+        {
+            "id": 1,
+            "nom": "DEV WEB\/MOBILE",
+            "description": "De l'analyse du besoin \u00e0 la mise en ligne, en passant par...",
+            "modules": 15,
+            "apprenants": 50,
+            "image": "assets\/images\/dw.jpeg"
+        },
+        {
+            "id": 2,
+            "nom": "REF DIG",
+            "description": "Couteau-suisse du num\u00e9rique, le r\u00e9f\u00e9rent digital participe...",
+            "modules": 10,
+            "apprenants": 50,
+            "image": "assets\/images\/rd.jpeg"
+        },
+        {
+            "id": 3,
+            "nom": "DEV DATA",
+            "description": "Le r\u00e9f\u00e9rentiel Dev Data permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 12,
+            "apprenants": 50,
+            "image": "assets\/images\/dd.jpeg"
+        },
+        {
+            "id": 4,
+            "nom": "AWS",
+            "description": "Le r\u00e9f\u00e9rentiel AWS permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 8,
+            "apprenants": 50,
+            "image": "assets\/images\/aws.jpeg"
+        },
+        {
+            "id": 5,
+            "nom": "Informatique",
+            "description": "Le r\u00e9f\u00e9rentiel Informatique permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 10,
+            "apprenants": 50,
+            "image": "assets\/images\/info.jpeg"
+        },
+        {
+            "id": 6,
+            "nom": "bureautique",
+            "description": "Le r\u00e9f\u00e9rentiel Bureautique permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 11,
+            "apprenants": 50,
+            "image": "assets\/images\/btq.jpeg"
+        },
+        {
+            "id": 7,
+            "nom": "multimedia",
+            "description": "Le r\u00e9f\u00e9rentiel Multimedia permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 9,
+            "apprenants": 50,
+            "image": "assets\/images\/mm.jpeg"
+        },
+        {
+            "id": 8,
+            "nom": "cybersecurite",
+            "description": "Le r\u00e9f\u00e9rentiel Cybers\u00e9curit\u00e9 permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 10,
+            "apprenants": 50,
+            "image": "assets\/images\/cyber.jpeg"
+        },
+        {
+            "id": 9,
+            "nom": "cloud",
+            "description": "Le r\u00e9f\u00e9rentiel Cloud permet d'acqu\u00e9rir les comp\u00e9tences...",
+            "modules": 10,
+            "apprenants": 50,
+            "image": "assets\/images\/cloud.jpeg"
+        }
+    ],
+    "personnel": [
+        {
+            "nom": "Sow",
+            "prenom": "Alioune",
+            "role": "coach",
+            "specialite": "DEV WEB\/MOBILE",
+            "telephone": "776543210",
+            "email": "alioune.sow@sonatelacademy.sn",
+            "login": "coach001",
+            "image": "assets\/images\/coach1.png",
+            "date_recrutement": "2022-09-01",
+            "statut": "actif"
+        },
+        {
+            "nom": "Diallo",
+            "prenom": "Mame Diarra",
+            "role": "stagiaire",
+            "specialite": "REF DIG",
+            "telephone": "770011223",
+            "email": "diarra.diallo@sonatelacademy.sn",
+            "login": "stagiaire003",
+            "image": "assets\/images\/stagiaire1.png",
+            "date_recrutement": "2025-01-15",
+            "statut": "en stage"
+        },
+        {
+            "nom": "Faye",
+            "prenom": "Cheikh",
+            "role": "permanent",
+            "specialite": "Infrastructures R\u00e9seaux",
+            "telephone": "775533221",
+            "email": "cheikh.faye@sonatelacademy.sn",
+            "login": "permanent005",
+            "image": "assets\/images\/permanent1.png",
+            "date_recrutement": "2020-06-20",
+            "statut": "actif"
+        },
+        {
+            "nom": "Sarr",
+            "prenom": "Aminata",
+            "role": "manager",
+            "specialite": "Gestion des programmes",
+            "telephone": "778899445",
+            "email": "aminata.sarr@sonatelacademy.sn",
+            "login": "manager001",
+            "image": "assets\/images\/manager.png",
+            "date_recrutement": "2019-03-10",
+            "statut": "actif"
+        }
+    ]
+}
