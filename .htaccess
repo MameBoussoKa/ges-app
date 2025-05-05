@@ -1,0 +1,9 @@
+# Activer la réécriture d'URL
+RewriteEngine On
+
+# Rediriger toute requête vers le dossier public
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
+
+# Interdire l'accès direct aux dossiers sensibles
+RedirectMatch 403 ^/app/

@@ -57,29 +57,28 @@
     }
 
 
-    function connexion_utilisateurs(){
+    function connexion_utilisateurs() {
         $model_auth = getAllModel();
         $sessions = getAllSession();
 
-
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-            
             $login = $sessions[session::POST->value](champ::LOGIN->value) ?? '';
             $password = $sessions[session::POST->value](champ::PASSWORD->value) ?? '';
 
-            $user = $model_auth[model_auth::CREATE_USER->value]($login , $password);
-
+            $user = $model_auth[model_auth::CREATE_USER->value]($login, $password);
             $errors = $model_auth[model_auth::VALIDATE_USER->value]($user);
 
             if (empty($errors)) {
-                $user = $model_auth[model_auth::GET_USER_BY_LOGIN_PASSWORD->value]($login , $password);
-                $sessions[session::SET_SESSION->value]('user',$user);
-                redirect_to_root(path::DASHBOARD->value);
-            }else{
+                $user = $model_auth[model_auth::GET_USER_BY_LOGIN_PASSWORD->value]($login, $password);
+                $sessions[session::SET_SESSION->value]('user', $user);
+
+                // Redirection vers la page des promotions
+                redirect_to_root('dashboard&action=promotions&action_grille_liste=grille');
+            } else {
                 render_view('login', [
                     'errors' => $errors,
                     'old_user' => $user
-                ]);                
+                ]);
             }
         }
     }

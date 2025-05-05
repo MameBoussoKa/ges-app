@@ -25,6 +25,7 @@
             'ajout_promotion' => ajouter_promotion(),
             'referentiels' => gestion_referentiels(),
             'voir_form_ajout' => voir_form_ajout(),
+            'apprenant' => gestion_apprenants(),
              default => '',
         };
         
@@ -185,9 +186,9 @@
                 'image' => $photoFile,
                 'referentiels' => !empty($ref) ? [['nom' => $ref, 'nombre_apprenants' => 0]] : []
             ];
-    
+    var_dump( $photoFile ); var_dump(file_exists($photoFile['tmp_name'])); 
             $erreurs = $promotions[promotion::VALIDER_PROMOTION->value]($promotion);
-    
+            
             if (empty($erreurs)) {
                 $photoPath = save_photo($photoFile);
                 
@@ -235,36 +236,31 @@
 
 
     function voir_form_ajout(){
+        
         $sessions = getAllSession();
         $user = $sessions[ session::GET_SESSION->value]('user');
         render_view('formulaire_ajout', ['user' => $user], 'base');
     }
+   
+    function gestion_apprenants(): void {
+        $filePath = __DIR__ . '/../data/data.json';
 
+        if (!file_exists($filePath)) {
+            $apprenants = [];
+        } else {
+            $data = json_decode(file_get_contents($filePath), true);
+            $apprenants = $data['apprenants'] ?? [];
 
+            // Ajoutez une valeur par défaut pour les clés manquantes
+            foreach ($apprenants as &$apprenant) {
+                $apprenant['date_heure'] = $apprenant['date_heure'] ?? 'Non spécifiée';
+            }
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        render_view('apprenant', [
+            'apprenants' => $apprenants,
+        ], 'base');
+    }
 
     handle_request();
-    
+

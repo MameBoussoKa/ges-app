@@ -24,7 +24,7 @@
       case AUTH = __DIR__.'/../controllers/auth.controller.php';
       case PROMOTIONS = __DIR__.'/../controllers/promotion.controller.php';
       case CONTROLLER_DASHBOARD = __DIR__.'/../controllers/controller.dashboard.controller.php';
-
+      case APPRENANTS = __DIR__.'/../controllers/apprenants.controller.php';
 
       case DATA = __DIR__.'/../data/data.json';
 

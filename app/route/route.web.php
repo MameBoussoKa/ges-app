@@ -29,10 +29,11 @@
 
             'dashboard' => require_function(path::CONTROLLER_DASHBOARD->value),
 
-            
+          
 
             default => "404 - Page non trouvée",
         };
+       
     }
 
     handle_route();

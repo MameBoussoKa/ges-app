@@ -26,7 +26,7 @@
         </button>
         <label for="modal-toggle" class="add-btn">
             <a href="index.php?page=dashboard&action=referentiels&actionRef=voir_formulaire">
-                <i class="fas fa-plus"></i> Affecter à une promotion
+                <i class="fas fa-plus"></i> Ajouter a la promotion 
             </a>
         </label>
         </div>
@@ -45,7 +45,7 @@
                 <input type="file" id="photo-upload" name="photo" accept="image/*">
             </div>
             <div class="form-group">
-                <label for="nom">Nom*</label>
+                <label for="nom">Nom</label>
                 <input type="text" id="nom" name="nom">
             </div>
             <div class="form-group">
@@ -58,11 +58,11 @@
                     <input type="number" id="capacite" name="capacite" value="30">
                 </div>
                 <div class="form-group">
-                    <label for="sessions">Nombre de sessions*</label>
+                    <label for="sessions">Nombre de sessions</label>
                     <select id="sessions" name="sessions">
                         <option value="1">1 session</option>
                         <option value="2">2 sessions</option>
-                        <option value="3">3 sessions</option>
+                
                     </select>
                 </div>
             </div>

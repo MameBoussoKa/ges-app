@@ -31,14 +31,24 @@
             mkdir($uploadDir, 0777, true);
         }
     
+        var_dump($file); // ← Ajoute ceci pour inspecter le contenu
+        if (!file_exists($file['tmp_name'])) {
+            echo "Fichier temporaire introuvable.";
+            return false;
+        }
+        var_dump(is_writable($uploadDir)); // Doit retourner true
+
         $extension = pathinfo($file['name'], PATHINFO_EXTENSION);
         $filename = uniqid('promo_', true) . '.' . $extension;
         $destination = $uploadDir . $filename;
     
         if (move_uploaded_file($file['tmp_name'], $destination)) {
             return $destination;
+        } else {
+            echo "Échec du move_uploaded_file vers $destination";
         }
     
         return false;
     }
+    
     

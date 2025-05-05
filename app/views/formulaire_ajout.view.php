@@ -132,7 +132,7 @@ $sessions[session::UNSET_SESSION->value]('old');
     <!-- Photo -->
     <div class="form-group">
         <label for="photo">Logo de la promotion</label>
-        <input type="file" id="photo" name="photo" accept="image/jpeg, image/png">
+        <input type="file" id="photo" name="photo" accept="image/jpeg, image/png" >
         <?php if (isset($errors['image'])): ?>
             <span class="error"><?= htmlspecialchars($errors['image']) ?></span>
         <?php endif; ?>

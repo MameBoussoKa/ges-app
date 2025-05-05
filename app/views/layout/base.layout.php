@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/assets/css/promo.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/layout.css">
+    <link rel="stylesheet" href="/assets/css/apprenant.css">
 </head>
 <body>
 
@@ -26,10 +27,10 @@
 
                 <nav>
                     <ul>
-                        <li><a href="index.php?page=dashboard&action=dashboard"><i class="fas fa-home"></i> Tableau de bord</a></li>
+                        <li><a href="#"><i class="fas fa-home"></i> Tableau de bord</a></li>
                         <li><a href="index.php?page=dashboard&action=promotions"><i class="fas fa-folder"></i> Promotions</a></li>
                         <li><a href="index.php?page=dashboard&action=referentiels"><i class="fas fa-book"></i> Référentiels</a></li>
-                        <li><a href="#"><i class="fas fa-users"></i> Apprenants</a></li>
+                        <li><a href="index.php?page=dashboard&action=apprenant"><i class="fas fa-users"></i> Apprenants</a></li>
                         <li><a href="#"><i class="fas fa-calendar-check"></i> Gestion des présences</a></li>
                         <li><a href="#"><i class="fas fa-laptop"></i> Kits & Laptops</a></li>
                         <li><a href="#"><i class="fas fa-chart-bar"></i> Rapports & Stats</a></li>
@@ -52,7 +53,7 @@
                 </div>
                 <div class="user-info">
                     <div class="user-avatar">
-                        <img src="<?= htmlspecialchars($user['image'] ?? 'assets/images/default-avatar.png') ?>" alt="Avatar">
+                        <img src="<?= htmlspecialchars($user['image'] ?? 'assets/images/a.gpeg') ?>" alt="Avatar">
                     </div>
                 </div>
             </div>

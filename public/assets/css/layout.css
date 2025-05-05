@@ -78,8 +78,7 @@ body {
     align-items: center;
     text-decoration: none;
     color: #333;
-    border-radius: 8px;
-    /* transition: 0.3s; */
+    /* border-radius: 8px; */
     padding: 12px;
 }
 
@@ -87,8 +86,8 @@ body {
 .sidebar nav ul li a.active {
     background-color: #fff5e6;
     color: #ff6600;
-    border-left: 4px solid #ff6600;
-    padding-left: 6px;
+    border-left: 10px solid #ff6600;
+    /* padding-left: 6px; */
 }
 
 .sidebar nav ul li a i {
@@ -106,10 +105,10 @@ body {
 
 .logout button {
     width: 100%;
-    height: 50px;
+    height: 60px;
     background-color: #ffe6e6;
     border: none;
-    color: #ff0000;
+    color: rgba(253, 145, 3, 1);
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
@@ -335,11 +334,11 @@ body {
 }
 
 .cancel-btn {
-    background-color: #ff0000;
+    background-color: blue;
     color: white;
     padding: 10px;
     border-radius: 6px;
     cursor: pointer;
     border: none;
-    width: 48%;
+    width: 5%;
 }
